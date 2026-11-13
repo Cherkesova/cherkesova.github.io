@@ -461,8 +461,8 @@
 @media(hover:hover){.copy-button:hover{background:#ffffff14}}
 .copy-button:active{background:#ffffff14;opacity:.5}
 
-@media(hover:hover){.copy-button:hover img{content:url("./assets/design/copy-control/copy-white.svg")}}
-.copy-button:focus-visible img{content:url("./assets/design/copy-control/copy-white.svg")}
+@media(min-width:601px){.copy-button img{opacity:.6}.copy-button:focus-visible img{opacity:1}}
+@media(min-width:601px) and (hover:hover){.copy-button:hover img{opacity:1}}
 
 /* Feedback must remain above the mobile header/overlay (z-index:40). */
 .toast{z-index:110}
