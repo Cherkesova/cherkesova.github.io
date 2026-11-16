@@ -412,6 +412,11 @@
 .home .portrait img,.about-portrait img{object-fit:cover;object-position:bottom}
 .about-portrait{width:193.5px;height:auto;aspect-ratio:140/143;max-width:100%}
 .home .about-copy{min-height:0}
+/* Preserve desktop reading widths when tablet columns become wider. */
+@media(min-width:601px) and (max-width:1200px){
+ .home .about-copy{max-width:552px}
+ .home .experience-row>div:last-child{max-width:549px}
+}
 .case-card{gap:12px}
 .case-card [data-design-slot="img container"]{aspect-ratio:381/286;transition:none}
 .case-card [data-design-slot="image 128"]{transition:transform .4s cubic-bezier(.16,1,.3,1)}
